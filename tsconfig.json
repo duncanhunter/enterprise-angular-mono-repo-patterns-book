@@ -16,7 +16,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nrwl-airlines/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nrwl-airlines/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nrwl-airlines/check-in/feature-shell": [
+        "libs/check-in/feature-shell/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

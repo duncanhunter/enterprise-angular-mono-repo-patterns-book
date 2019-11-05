@@ -25,6 +25,9 @@
     },
     "booking": {
       "tags": []
+    },
+    "check-in-feature-shell": {
+      "tags": ["scope=check-in", "type=feature"]
     }
   }
 }
