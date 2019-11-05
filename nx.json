@@ -9,22 +9,22 @@
   },
   "projects": {
     "check-in-e2e": {
-      "tags": []
+      "tags": ["scope=check-in", "type=e2e"]
     },
     "check-in": {
-      "tags": []
+      "tags": ["scope=check-in", "type=app"]
     },
     "api": {
-      "tags": []
+      "tags": ["scope=api"]
     },
     "api-interfaces": {
-      "tags": []
+      "tags": ["scope=api"]
     },
     "booking-e2e": {
-      "tags": []
+      "tags": ["scope=booking", "type=e2e"]
     },
     "booking": {
-      "tags": []
+      "tags": ["scope=booking", "type=app"]
     },
     "check-in-feature-shell": {
       "tags": ["scope=check-in", "type=feature"]
@@ -33,18 +33,21 @@
       "tags": ["scope=check-in", "type=data-access"]
     },
     "shared-seatmap-feature-seatmap": {
-      "tags": []
+      "tags": ["scope=shared", "type=feature"]
     },
     "shared-seatmap-data-access": {
-      "tags": []
+      "tags": ["scope=shared", "type=data-access"]
     },
     "shared-data-access": {
-      "tags": []
+      "tags": ["scope=shared", "type=data-access"]
     },
     "booking-data-access": {
-      "tags": []
+      "tags": ["scope=booking", "type=data-access"]
     },
     "booking-feature-shell": {
+      "tags": ["scope=booking", "type=feature"]
+    },
+    "shared-util-auth": {
       "tags": ["scope=booking", "type=feature"]
     }
   }

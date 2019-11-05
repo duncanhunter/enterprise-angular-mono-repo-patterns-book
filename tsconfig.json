@@ -37,7 +37,8 @@
       ],
       "@nrwl-airlines/booking/feature-shell": [
         "libs/booking/feature-shell/src/index.ts"
-      ]
+      ],
+      "@nrwl-airlines/shared/util/auth": ["libs/shared/util/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
