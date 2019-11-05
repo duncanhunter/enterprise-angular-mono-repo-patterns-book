@@ -22,6 +22,9 @@
       ],
       "@nrwl-airlines/check-in/data-access": [
         "libs/check-in/data-access/src/index.ts"
+      ],
+      "@nrwl-airlines/shared/seatmap/feature-seatmap": [
+        "libs/shared/seatmap/feature-seatmap/src/index.ts"
       ]
     }
   },

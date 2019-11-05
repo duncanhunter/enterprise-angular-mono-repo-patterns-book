@@ -31,6 +31,9 @@
     },
     "check-in-data-access": {
       "tags": ["scope=check-in", "type=data-access"]
+    },
+    "shared-seatmap-feature-seatmap": {
+      "tags": []
     }
   }
 }
