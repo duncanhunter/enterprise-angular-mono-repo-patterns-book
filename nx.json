@@ -19,6 +19,12 @@
     },
     "api-interfaces": {
       "tags": []
+    },
+    "booking-e2e": {
+      "tags": []
+    },
+    "booking": {
+      "tags": []
     }
   }
 }
