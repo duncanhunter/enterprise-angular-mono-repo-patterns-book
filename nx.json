@@ -28,6 +28,9 @@
     },
     "check-in-feature-shell": {
       "tags": ["scope=check-in", "type=feature"]
+    },
+    "check-in-data-access": {
+      "tags": ["scope=check-in", "type=data-access"]
     }
   }
 }

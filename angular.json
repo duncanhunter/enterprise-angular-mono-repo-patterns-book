@@ -353,6 +353,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "check-in-data-access": {
+      "projectType": "library",
+      "root": "libs/check-in/data-access",
+      "sourceRoot": "libs/check-in/data-access/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/data-access/tsconfig.lib.json",
+              "libs/check-in/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/check-in/data-access/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/data-access/jest.config.js",
+            "tsConfig": "libs/check-in/data-access/tsconfig.spec.json",
+            "setupFile": "libs/check-in/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
