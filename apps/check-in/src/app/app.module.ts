@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
+import { SharedUtilAuthModule } from '@nrwl-airlines/shared/util/auth';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -10,6 +11,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+    SharedUtilAuthModule,
     RouterModule.forRoot([
       {
         path: 'check-in',

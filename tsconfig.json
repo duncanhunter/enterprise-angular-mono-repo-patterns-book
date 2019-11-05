@@ -38,7 +38,12 @@
       "@nrwl-airlines/booking/feature-shell": [
         "libs/booking/feature-shell/src/index.ts"
       ],
-      "@nrwl-airlines/shared/util/auth": ["libs/shared/util/auth/src/index.ts"]
+      "@nrwl-airlines/shared/util/auth": ["libs/shared/util/auth/src/index.ts"],
+      "@nrwl-airlines/shared/ui/spinner": [
+        "libs/shared/ui/spinner/src/index.ts"
+      ],
+      "@nrwl-airlines/shared/ui/alert": ["libs/shared/ui/alert/src/index.ts"],
+      "@nrwl-airlines/shared/ui/button": ["libs/shared/ui/button/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -49,6 +49,15 @@
     },
     "shared-util-auth": {
       "tags": ["scope=booking", "type=feature"]
+    },
+    "shared-ui-spinner": {
+      "tags": ["scope=booking", "type=feature"]
+    },
+    "shared-ui-alert": {
+      "tags": ["scope=booking", "type=feature"]
+    },
+    "shared-ui-button": {
+      "tags": ["scope=booking", "type=feature"]
     }
   }
 }

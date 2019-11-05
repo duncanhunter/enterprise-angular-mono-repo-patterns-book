@@ -560,6 +560,99 @@
           "styleext": "scss"
         }
       }
+    },
+    "shared-ui-spinner": {
+      "projectType": "library",
+      "root": "libs/shared/ui/spinner",
+      "sourceRoot": "libs/shared/ui/spinner/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui/spinner/tsconfig.lib.json",
+              "libs/shared/ui/spinner/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/spinner/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/spinner/jest.config.js",
+            "tsConfig": "libs/shared/ui/spinner/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui/spinner/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "shared-ui-alert": {
+      "projectType": "library",
+      "root": "libs/shared/ui/alert",
+      "sourceRoot": "libs/shared/ui/alert/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui/alert/tsconfig.lib.json",
+              "libs/shared/ui/alert/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/alert/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/alert/jest.config.js",
+            "tsConfig": "libs/shared/ui/alert/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui/alert/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "shared-ui-button": {
+      "projectType": "library",
+      "root": "libs/shared/ui/button",
+      "sourceRoot": "libs/shared/ui/button/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui/button/tsconfig.lib.json",
+              "libs/shared/ui/button/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/shared/ui/button/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui/button/jest.config.js",
+            "tsConfig": "libs/shared/ui/button/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui/button/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
