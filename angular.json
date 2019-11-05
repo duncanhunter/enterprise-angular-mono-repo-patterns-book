@@ -471,6 +471,64 @@
         }
       },
       "schematics": {}
+    },
+    "booking-data-access": {
+      "projectType": "library",
+      "root": "libs/booking/data-access",
+      "sourceRoot": "libs/booking/data-access/src",
+      "prefix": "nrwl-airlines",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/data-access/tsconfig.lib.json",
+              "libs/booking/data-access/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/booking/data-access/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/data-access/jest.config.js",
+            "tsConfig": "libs/booking/data-access/tsconfig.spec.json",
+            "setupFile": "libs/booking/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-feature-shell": {
+      "projectType": "library",
+      "root": "libs/booking/feature-shell",
+      "sourceRoot": "libs/booking/feature-shell/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-shell/tsconfig.lib.json",
+              "libs/booking/feature-shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/booking/feature-shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-shell/jest.config.js",
+            "tsConfig": "libs/booking/feature-shell/tsconfig.spec.json",
+            "setupFile": "libs/booking/feature-shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

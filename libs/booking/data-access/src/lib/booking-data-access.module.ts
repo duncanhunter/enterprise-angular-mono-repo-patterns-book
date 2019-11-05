@@ -6,4 +6,4 @@ import { SharedDataAccessModule } from '@nrwl-airlines/shared/data-access';
 @NgModule({
   imports: [CommonModule, SharedDataAccessModule]
 })
-export class CheckInDataAccessModule {}
+export class BookingDataAccessModule {}

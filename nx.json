@@ -40,6 +40,12 @@
     },
     "shared-data-access": {
       "tags": []
+    },
+    "booking-data-access": {
+      "tags": []
+    },
+    "booking-feature-shell": {
+      "tags": ["scope=booking", "type=feature"]
     }
   }
 }
