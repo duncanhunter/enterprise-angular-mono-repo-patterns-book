@@ -43,7 +43,13 @@
         "libs/shared/ui/spinner/src/index.ts"
       ],
       "@nrwl-airlines/shared/ui/alert": ["libs/shared/ui/alert/src/index.ts"],
-      "@nrwl-airlines/shared/ui/button": ["libs/shared/ui/button/src/index.ts"]
+      "@nrwl-airlines/shared/ui/button": ["libs/shared/ui/button/src/index.ts"],
+      "@nrwl-airlines/shared/seatmap/ui/seatmap": [
+        "libs/shared/seatmap/ui/seatmap/src/index.ts"
+      ],
+      "@nrwl-airlines/check-in/ui/search": [
+        "libs/check-in/ui/search/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

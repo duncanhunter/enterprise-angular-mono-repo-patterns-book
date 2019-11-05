@@ -58,6 +58,12 @@
     },
     "shared-ui-button": {
       "tags": ["scope=booking", "type=feature"]
+    },
+    "shared-seatmap-ui-seatmap": {
+      "tags": ["scope=booking", "type=feature"]
+    },
+    "check-in-ui-search": {
+      "tags": ["scope=booking", "type=feature"]
     }
   }
 }

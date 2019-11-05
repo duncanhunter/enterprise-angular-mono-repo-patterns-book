@@ -7,6 +7,7 @@ import { SharedSeatmapFeatureSeatmapModule } from '@nrwl-airlines/shared/seatmap
 import { SharedUiSpinnerModule } from '@nrwl-airlines/shared/ui/spinner';
 import { SharedUiAlertModule } from '@nrwl-airlines/shared/ui/alert';
 import { SharedUiButtonModule } from '@nrwl-airlines/shared/ui/button';
+import { CheckInUiSearchModule } from '@nrwl-airlines/check-in/ui/search';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { SharedUiButtonModule } from '@nrwl-airlines/shared/ui/button';
     SharedUiSpinnerModule,
     SharedUiAlertModule,
     SharedUiButtonModule,
+    CheckInUiSearchModule,
     RouterModule.forChild([
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ])

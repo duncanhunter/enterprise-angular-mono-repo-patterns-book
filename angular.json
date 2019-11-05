@@ -653,6 +653,71 @@
           "styleext": "scss"
         }
       }
+    },
+    "shared-seatmap-ui-seatmap": {
+      "projectType": "library",
+      "root": "libs/shared/seatmap/ui/seatmap",
+      "sourceRoot": "libs/shared/seatmap/ui/seatmap/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/seatmap/ui/seatmap/tsconfig.lib.json",
+              "libs/shared/seatmap/ui/seatmap/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/seatmap/ui/seatmap/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/seatmap/ui/seatmap/jest.config.js",
+            "tsConfig": "libs/shared/seatmap/ui/seatmap/tsconfig.spec.json",
+            "setupFile": "libs/shared/seatmap/ui/seatmap/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "check-in-ui-search": {
+      "projectType": "library",
+      "root": "libs/check-in/ui/search",
+      "sourceRoot": "libs/check-in/ui/search/src",
+      "prefix": "na",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/ui/search/tsconfig.lib.json",
+              "libs/check-in/ui/search/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/check-in/ui/search/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/ui/search/jest.config.js",
+            "tsConfig": "libs/check-in/ui/search/tsconfig.spec.json",
+            "setupFile": "libs/check-in/ui/search/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {
